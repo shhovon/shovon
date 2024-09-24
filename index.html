@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shovon Roy - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
+	<script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+<header>
+    <nav>
+        <div class="logo">Shovon Roy</div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#employment">Employment</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <section id="home">
+            <div class="profile-picture">
+                <img src="avatar.jpg" alt="Shovon Roy">
+            </div>
+            <h1>Shovon Roy</h1>
+            <p id="typing-effect">IT Executive & Software Developer</p>
+			
+			<!-- CV DOWNLOAD BUTTON -->
+			<div class="cv-download">
+				<a href="Resume_of_Shovon_Roy.pdf" class="btn btn-download" download="Resume_ShovonRoy.pdf">
+					<i data-feather="arrow-down"></i>
+					<span class="download-text">DOWNLOAD CV</span>
+				</a>
+			</div>
+        </section>
+
+        <section id="employment">
+            <h2>Employment History</h2>
+            <div class="employment-grid">
+                <div class="employment-card">
+                    <h3>Software Executive</h3>
+                    <p>Pacific Jeans Group</p>
+                    <p>January 2024 - Present</p>
+                    <ul>
+                        <li>Developed new software applications tailored to the company's operational needs</li>
+                        <li>Maintained and provided user support for existing software</li>
+                        <li>Managed MS SQL databases and worked within Oracle EBS</li>
+                    </ul>
+                </div>
+                <div class="employment-card">
+                    <h3>Software Developer</h3>
+                    <p>Smart Framework</p>
+                    <p>January 2023 - October 2023</p>
+                    <ul>
+                        <li>Developed new software solutions to meet client requirements</li>
+                        <li>Maintained and provided user support for existing software applications</li>
+                        <li>Attended client meetings to gather requirements and discuss project progress</li>
+                    </ul>
+                </div>
+                <div class="employment-card">
+                    <h3>Junior Software Tester</h3>
+                    <p>Ringer Soft Ltd.</p>
+                    <p>November 2022 - January 2023</p>
+                    <ul>
+                        <li>Conducted automation testing using Selenium Python</li>
+                        <li>Performed manual testing on client websites</li>
+                        <li>Collaborated with development teams to report findings and resolve issues</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education and Skills</h2>
+            <div class="education-section">
+                <h3>Education</h3>
+                <div class="education-item">
+                    <h4>Bachelors in Computer Science and Engineering</h4>
+                    <p>American International University-Bangladesh, Dhaka</p>
+                    <p>January 2019 - August 2023</p>
+                </div>
+            </div>
+            <div class="skills-section">
+                <h3>Skills</h3>
+				<br>
+                <div class="skills-container">
+                    <div class="skill">
+                        <span class="skill-name">ASP.NET</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">MSSQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Oracle EBS</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Shovon Roy, born and raised in Chittagong, is a passionate and skilled professional in the field of computer science and <br> engineering. After graduating from AIUB, Dhaka, he embarked on his career journey in November 2022. Currently <br> serving as a Software Executive at a leading garments exporter, Shovon continues to leverage his extensive knowledge and <br> experience to drive innovation and efficiency within the company.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Details</h2>
+            <div class="contact-details">
+                <p><strong>Address:</strong> 306/320 Andarkilla, Chattogram, Bangladesh</p>
+                <p><strong>Phone number:</strong> +8801795518287</p>
+                <p><strong>E-mail:</strong> dev.shovonroy@gmail.com</p>
+            </div>
+
+            <h2>Get in Touch</h2>
+            <form id="contact-form" action="https://formspree.io/f/your_form_id" method="POST">
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div id="thank-you-message" style="display: none;">
+                <h3>Thank You!</h3>
+                <p>Your message has been sent successfully. I'll get back to you soon.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shovon Roy. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/shhovon" target="_blank"><i data-feather="facebook"></i></a>
+            <a href="https://www.instagram.com/shhovon/" target="_blank"><i data-feather="instagram"></i></a>
+            <a href="https://www.github.com/shhovon" target="_blank"><i data-feather="github"></i></a>
+            <a href="https://www.linkedin.com/in/shhovon" target="_blank"><i data-feather="linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+	<script>
+  feather.replace();
+</script>
+
+<style>
+
+:root {
+    --primary: #1A1A2E;
+    --secondary: #16213E;
+    --accent: #0F3460;
+    --highlight: #E94560;
+    --text: #FFFFFF;
+    --text-light: #E0E0E0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+body, main, header, footer {
+    position: relative;
+    z-index: 2;
+}
+
+header {
+    padding: 1rem;
+    background-color: var(--secondary);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--highlight);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text);
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--secondary);
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+main {
+	position: relative; 
+    padding-top: 60px; 
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--highlight);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: rgba(22, 33, 62, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--highlight);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    cursor: pointer;
+}
+
+.skills-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.skill-bar {
+    display: inline-block;
+    width: calc(100% - 120px);
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: var(--highlight);
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text);
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-name {
+        width: 80px;
+    }
+
+    .skill-bar {
+        width: calc(100% - 100px);
+    }
+}
+
+.profile-picture {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; 
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--text);
+    margin: 0 0.5rem;
+
+}
+
+.social-links a:hover {
+    color: var(--highlight);
+}
+
+.employment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.employment-card {
+    background-color: rgba(22, 33, 62, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.employment-card:hover {
+    transform: translateY(-5px);
+}
+
+.employment-card h3 {
+    color: var(--highlight);
+    margin-bottom: 0.5rem;
+}
+
+.employment-card p {
+    margin-bottom: 0.5rem;
+}
+
+.employment-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.employment-card li {
+    margin-bottom: 0.5rem;
+}
+
+.education-section, .skills-section {
+    margin-top: 2rem;
+}
+
+.education-item {
+    margin-bottom: 1rem;
+}
+
+.education-item h4 {
+    color: var(--highlight);
+    margin-bottom: 0.25rem;
+}
+
+.education-item p {
+    margin: 0;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: var(--highlight);
+    border-radius: 5px;
+}
+
+.cv-download {
+    margin-top: 2rem;
+}
+
+.btn-download {
+    background-color: var(--highlight);
+    color: var(--text);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: var(--accent);
+}
+
+.btn-download i {
+    margin-right: 0.5rem;
+}
+
+.download-text {
+    font-weight: bold;
+}
+
+#thank-you-message {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(22, 33, 62, 0.8);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#thank-you-message h3 {
+    color: var(--highlight);
+    margin-bottom: 10px;
+}
+
+.contact-details {
+    background-color: rgba(22, 33, 62, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.contact-details p {
+    margin-bottom: 0.5rem;
+}
+
+.contact-details strong {
+    color: var(--highlight);
+}
+
+</style>    
+
+<script>
+// Typing effect
+const typingEffect = document.getElementById('typing-effect');
+const text = typingEffect.textContent;
+typingEffect.textContent = '';
+let i = 0;
+
+function typeWriter() {
+    if (i < text.length) {
+        typingEffect.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+    }
+}
+
+typeWriter();
+
+// Particle.js configuration for the entire page with cursor interaction
+particlesJS('particles-js', {
+    particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: '#ffffff' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5, random: false },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: '#ffffff', opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2 }
+    },
+    interactivity: {
+        detect_on: 'window', // Change this from 'canvas' to 'window'
+        events: {
+            onhover: { enable: true, mode: 'grab' },
+            onclick: { enable: true, mode: 'push' },
+            resize: true
+        },
+        modes: {
+            grab: { distance: 200, line_linked: { opacity: 1 } },
+            bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+            repulse: { distance: 100, duration: 0.4 },
+            push: { particles_nb: 4 },
+            remove: { particles_nb: 2 }
+        }
+    },
+    retina_detect: true
+});
+
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    var form = this;
+    var formData = new FormData(form);
+
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            form.reset();
+            form.style.display = 'none';
+            document.getElementById('thank-you-message').style.display = 'block';
+        } else {
+            throw new Error('Form submission failed');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error sending your message. Please try again later.');
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', function() {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.classList.remove('active');
+        });
+    });
+});
+
+feather.replace();
+
+</script>
+
+</body>
+</html>

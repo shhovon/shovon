@@ -1,0 +1,392 @@
+:root {
+    --primary: #1A1A2E;
+    --secondary: #16213E;
+    --accent: #0F3460;
+    --highlight: #E94560;
+    --text: #FFFFFF;
+    --text-light: #E0E0E0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+    /* Remove overflow hidden to allow scrolling */
+}
+
+#particles-js {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensures it is behind other content */
+}
+
+
+header {
+    padding: 1rem;
+    background-color: var(--secondary);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--highlight);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text);
+    margin: 2px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--secondary);
+        padding: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+main {
+	position: relative; /* Ensures main content is layered above particles */
+    padding-top: 60px; /* Adjust if necessary for header height */
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--highlight);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    background-color: rgba(22, 33, 62, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--highlight);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn:hover {
+    background-color: var(--accent);
+    cursor: pointer;
+}
+
+.skills-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+.skill {
+    margin-bottom: 1rem;
+}
+
+.skill-name {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.skill-bar {
+    display: inline-block;
+    width: calc(100% - 120px);
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: var(--highlight);
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--text);
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-name {
+        width: 80px;
+    }
+
+    .skill-bar {
+        width: calc(100% - 100px);
+    }
+}
+
+.profile-picture {
+    width: 250px; /* Adjust size as needed */
+    height: 250px; /* Adjust size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1rem; /* Adds space below the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the image covers the container while preserving aspect ratio */
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: var(--text);
+    margin: 0 0.5rem;
+    /* font-size: 1.5rem; */
+}
+
+.social-links a:hover {
+    color: var(--highlight);
+}
+
+.employment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.employment-card {
+    background-color: rgba(22, 33, 62, 0.8);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.employment-card:hover {
+    transform: translateY(-5px);
+}
+
+.employment-card h3 {
+    color: var(--highlight);
+    margin-bottom: 0.5rem;
+}
+
+.employment-card p {
+    margin-bottom: 0.5rem;
+}
+
+.employment-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.employment-card li {
+    margin-bottom: 0.5rem;
+}
+
+.education-section, .skills-section {
+    margin-top: 2rem;
+}
+
+.education-item {
+    margin-bottom: 1rem;
+}
+
+.education-item h4 {
+    color: var(--highlight);
+    margin-bottom: 0.25rem;
+}
+
+.education-item p {
+    margin: 0;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: var(--highlight);
+    border-radius: 5px;
+}
+
+.cv-download {
+    margin-top: 2rem;
+}
+
+.btn-download {
+    background-color: var(--highlight);
+    color: var(--text);
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: var(--accent);
+}
+
+.btn-download i {
+    margin-right: 0.5rem;
+}
+
+.download-text {
+    font-weight: bold;
+}
+
+#thank-you-message {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(22, 33, 62, 0.8);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#thank-you-message h3 {
+    color: var(--highlight);
+    margin-bottom: 10px;
+}
